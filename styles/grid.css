@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.grid-content {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px repeat(12, 1fr);
+    grid-template-rows: 2fr 1fr 2fr 3fr;
+    background-color: bisque;
+    gap: 15px;
+    padding: 10px;
+}
+
+.sidebar {
+    background-color: blueviolet;
+    grid-row: 1 / -1;
+}
+
+.header {
+    background-color: silver;
+    grid-column: 2 / -1;
+}
+
+.state-1 {
+    background-color: silver;
+    grid-column: 2 / 5;
+}
+
+.state-2 {
+    background-color: silver;
+    grid-column: 5 / 8;
+}
+
+.state-3 {
+    background-color: silver;
+    grid-column: 8 / 11;
+}
+
+.state-4 {
+    background-color: silver;
+    grid-column: 11 / -1;
+}
+
+.chart-1 {
+    background-color: silver;
+    grid-column: 2 / 8;
+}
+
+.chart-2 {
+    background-color: silver;
+    grid-column: 8 / -1;
+}
+
+.overview {
+    background-color: silver;
+    grid-column: 2 / 11;
+}
+
+.reminder {
+    background-color: silver;
+    grid-column: 11 / -1;
+}
+
+@media screen and (max-width: 576px) {
+
+    .grid-content {
+        height: 100vh;
+        width: 100%;
+        grid-template-rows: repeat(7, 1fr);
+
+    }
+
+    .state-1 {
+        background-color: silver;
+        grid-column: 2 / 8;
+    }
+
+    .state-2 {
+        background-color: silver;
+        grid-column: 8 / -1;
+    }
+
+    .state-3 {
+        background-color: silver;
+        grid-column: 2 / 8;
+    }
+
+    .state-4 {
+        background-color: silver;
+        grid-column: 8 / -1;
+    }
+
+    .chart-1 {
+        background-color: silver;
+        grid-column: 2 / -1;
+    }
+
+    .chart-2 {
+        background-color: silver;
+        grid-column: 2 / -1;
+    }
+
+    .overview {
+        background-color: silver;
+        grid-column: 2 / -1;
+    }
+
+    .reminder {
+        background-color: silver;
+        grid-column: 2 / -1;
+    }
+}
